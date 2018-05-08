@@ -1,0 +1,45 @@
+
+/* body {
+   background: url(img/background-1.png); 
+  background-repeat: no-repeat; background-position:center center; background-size: cover; height:100vh;
+} */
+
+#login h1 a, .login h1 a  {    background-image: url(http://so-lunch2018-usapascal366265.codeanyapp.com/wp-content/themes/soluch2/so3/img/SO-LUNCH-EMBLEME-01.png)!important;
+    background-size: 150px!important;
+    height: 124px!important;
+    position: relative;
+    width: 144px;}
+
+.login form {
+    margin-top: 20px;
+    margin-left: 0;
+    padding: 26px 24px 46px;
+    background: #abd3a8;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.13);
+    box-shadow: 0 1px 3px rgba(0,0,0,.13);
+    border-radius: 50px;
+}
+
+#login {
+    width: 320px;
+    padding: 2% 0 0;
+    margin: auto;
+}
+
+.login .button-primary {
+    float: right;
+    background-color: #ffffff63;
+    border-radius: 45px;
+    color: #0a0a0a;
+    border: 2px solid;
+}
+
+.wp-core-ui .button-primary {
+    background: #abd3a8;
+    border-color: #ffffff #fdfdfd #fffffff0;
+    -webkit-box-shadow: 0 1px 0 #ffffff00;
+    box-shadow: 0 1px 0 #ffffff;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #ffffff00, 1px 0 1px #fbfeff00, 0 1px 1px #ffffff00, -1px 0 1px #fbfeff00;
+}

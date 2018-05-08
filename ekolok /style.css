@@ -1,0 +1,411 @@
+/*
+Theme Name: Ekolok
+Theme URI: https://wordpress.org/themes/Ekolok/
+Author: Empire Communication
+Author URI: https://wordpress.org/
+Description: Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead with an optional right sidebar that works perfectly for blogs and websites. It has custom color options with beautiful default color schemes, a harmonious fluid grid using a mobile-first approach, and impeccable polish in every detail. Twenty Sixteen will make your WordPress look beautiful everywhere.
+Version: 1.3
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
+Text Domain: Ekolok
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+html, body{
+  height:100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /*c'est inversé la couleur agit sur les autres templates*/
+}
+
+/*******************************************************************************
+                                  SOMMAIRE
+ ****************************************************************************** */
+/*
+                                  - Menu -
+                                  - Location -
+                                  - Contact -
+                                  - A Propos -
+                                  - Footer -
+                                  - A propos -
+                              http://htmlreference.io/
+                              http://cssreference.io/
+                              https://aristath.github.io/kirki/
+*/
+/*******************************************************************************
+                                  Fin SOMMAIRE
+ ****************************************************************************** */
+
+
+/*******************************************************************************
+                                  Menu
+ ****************************************************************************** */
+
+ 
+
+.news-nav{
+  background-color: rgba(4, 4, 4, 0.39);
+  width: 100%;
+  height: 65px;
+  position: absolute;
+  z-index: 55;
+}
+
+.menu-primary-menu-container{
+   margin-left: 45px!important;
+
+}
+
+nav {
+    color: #fff;
+    background-color: rgba(238, 110, 115, 0);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+     -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0), 0 1px 5px 0 rgba(0, 0, 0, 0), 0 3px 1px -2px rgba(0, 0, 0, 0);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0), 0 1px 5px 0 rgba(0, 0, 0, 0), 0 3px 1px -2px rgba(0, 0, 0, 0);
+}
+
+.menu-social-f {
+    width: 65px;
+    float: right;
+    padding-right: 45px;
+    margin-right: 45px;
+    /* height: 45px; */
+    /*background-color: purple;*/
+}
+
+.menu-social-g {
+    width: 65px;
+    float: right;
+    padding-right: 45px;
+    /* height: 45px; */
+    /*background-color: red;*/
+}
+
+.menu-social-g:hover{
+  background-color: #e7501e!important;
+}
+
+.menu-social-f:hover{
+  background-color: #e7501e!important;
+}
+.menu-social-t:hover{
+  background-color: #e7501e!important;
+
+}
+
+.menu-social-t{
+    width: 65px;
+    float: right;
+    padding-right: 45px;
+    /* height: 45px; */
+    /*background-color: green;*/
+}
+
+.logo-g {
+    width: 30px;
+    position: relative;
+    top: 7px;
+    left: 17px;
+}
+
+.logo-f{
+      width: 12px;
+    position: relative;
+    left: 21px;
+    top: 4px;
+}
+
+
+li a:hover{
+  background-color: #e7501e!important;
+      height: 54px;
+    position: relative;
+    bottom: 5px;
+}
+
+
+.globale-menu{
+  position: relative;
+    text-align: center; 
+  bottom: 138px
+
+}
+
+/************ modale menu **********/
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+        overflow: auto!important;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 100%;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    /*https://uigradients.com/*/
+    background: #fff;
+    /*background: -moz-linear-gradient(#fff, #e7501e);
+    background: -webkit-linear-gradient(#fff, #e7501e);
+    background: -o-linear-gradient(#fff, #e7501e);*/
+
+}
+.close {
+    background: black;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+.close:hover {
+    background: #e7501e;
+}
+
+.logo-ekolok{
+      margin-right: auto;
+    margin-left: auto;
+    display: block;
+        width: 256px;
+}
+
+.text-menu{
+  color: #ffffff;
+  text-decoration: none;
+  padding-left: 40px; 
+  font-size: 1.2em;
+}
+
+/*******************************************************************************
+                                  Location
+ *******************************************************************************/
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+.btn-floating {
+    background-color: #e7501e;
+    border-radius: 50%;
+}
+input[type=text]:not(.browser-default){
+    width: 58%!important;
+}
+
+/*******************************************************************************
+                                  Contact
+ *******************************************************************************/
+
+
+.Contacter-Nous{
+    position: relative;
+    top: 20px;
+}
+
+.material-icons{
+    color:#e7501e;
+}
+
+.btn{
+   background-color: #e7501e; 
+}
+
+.modalDialog-contact {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog-contact:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog-contact > div {
+    width: 50%;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    /*https://uigradients.com/*/
+    background: #fff;
+    /*background: -moz-linear-gradient(#fff, #e7501e);
+    background: -webkit-linear-gradient(#fff, #e7501e);
+    background: -o-linear-gradient(#fff, #e7501e);*/
+
+}
+
+/*******************************************************************************
+                                  footer
+ *******************************************************************************/
+
+@import url('https://fonts.googleapis.com/css?family=Vollkorn');
+
+#globale-copyright{
+  z-index: 45!important; 
+  position: absolute!important;
+  bottom: 15px!important; 
+  transform: translateX(-50%);
+    left: 50%;
+  color: #ffffff!important; 
+}
+
+/*******************************************************************************
+                                  A propos
+ *******************************************************************************/
+
+@import url(https://fonts.googleapis.com/css?family=Open+sans);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+.snip1515 {
+  font-family: 'Open Sans', Arial, sans-serif;
+  position: relative;
+  /*float: left;*/
+  margin: 10px 1%;
+  left: 50%;
+  transform: translate(-50%);
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  line-height: 1.4em;
+  font-size: 14px;
+  box-shadow: none !important;
+}
+
+.snip1515 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.snip1515 .profile-image {
+  display: inline-block;
+  width: 80%;
+  z-index: 1;
+  position: relative;
+  padding: 10px;
+  border: 2px solid #e8b563;
+}
+
+.snip1515 .profile-image img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.snip1515 figcaption {
+  width: 100%;
+  background-color: #F2F2F2;
+  color: #555;
+  padding: 125px 25px 25px;
+  margin-top: -100px;
+  display: inline-block;
+}
+
+.snip1515 h3,
+.snip1515 h4,
+.snip1515 p {
+  margin: 0 0 5px;
+}
+
+.snip1515 h3 {
+  font-weight: 600;
+  font-size: 1.3em;
+  font-family: 'Playfair Display', Arial, sans-serif;
+}
+
+.snip1515 h4 {
+  color: #8c8c8c;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.snip1515 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.snip1515 .icons {
+  text-align: center;
+  width: 100%;
+}
+
+.snip1515 i {
+  padding: 10px 2px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: normal;
+  color: #e8b563;
+  opacity: 0.75;
+}
+
+.snip1515 i:hover {
+  opacity: 1;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+
+@media screen and (max-width: 950px){
+       .text-about {
+          width: 435px!important;
+          }
+}
+
+@media screen and (max-width: 450px){
+       .text-about {
+          width: 335px!important;
+          }
+
+      .cadre1{
+        height: 500px;
+      }    
+}
+
+@media screen and (max-width: 400px){
+       .text-about {
+          width: 300px!important;
+          }
+
+      .cadre1{
+        height: 500px;
+      }    
+} 
+
